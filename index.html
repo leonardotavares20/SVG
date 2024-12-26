@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <svg
+      width="600"
+      preserveAspectRatio="xMidYMin meet"
+      viewBox="0 0 300 300"
+      height="300"
+      style="border: 1px solid red"
+    >
+      <circle cx="150" cy="150" r="100" style="fill: red" />
+    </svg>
+
+    <h2>Formas Básicas</h2>
+
+    <h3>Rect</h3>
+
+    <svg style="border: 1px solid red">
+      <rect x="0" y="0" width="200" height="200" />
+    </svg>
+
+    <h3>Circle</h3>
+
+    <svg style="border: 1px solid red">
+      <circle cx="150" cy="70" r="25" />
+    </svg>
+
+    <h3>Ellipse</h3>
+
+    <svg style="border: 1px solid red">
+      <ellipse cx="150" cy="80"" rx="100" ry="70"/>
+    </svg>
+
+    <h3>Line</h3>
+
+    <svg style="border: 1px solid red">
+      <line x1="40" y1="50" x2="240" y2="50" stroke="red" stroke-width="5" />
+    </svg>
+
+    <h3>Polyline</h3>
+
+    <svg style="border: 1px solid red">
+      <polyline
+        points="50,20, 50,50, 100,20, 100,50"
+        fill="transparent"
+        stroke-width="5"
+        stroke="purple"
+      />
+    </svg>
+
+    <h3>Polygon</h3>
+
+    <svg preserveAspectRatio="xMidYMin meet" style="border: 1px solid red">
+      <polygon
+        points="140,5, 200,5, 240,50, 240,100, 200,140, 140,140, 100,100, 100,50"
+        fill="orange"
+        stroke-width="5"
+        stroke="red"
+        fill="black"
+      />
+    </svg>
+  </body>
+</html>
+
+<!-- Propriedades aspectRatio -->
+
+<!-- Exemplo -->
+
+<!-- preserveAspectRatio="xMidYMin meet" -->
+
+<!-- Você pode ajusta a posição da imagem usando as propriedades x e y com os as nomenclaturas: xMin, xMid, xMax, yMin, yMid e yMax -->
+
+<!-- meet = igual ao contain do css, slice = igual ao cover do css -->
+
+<!-- 
+  xMinYMin = inicia no eixo horizontal 0 e no eixo vertical 0, 
+  xMidXMin = inicia no eixo horizontal 50% e no eixo vertical 0, 
+  xMaxYMin = inicia no eixo horizontal 100% e no eixo vertical 0 
+-->
