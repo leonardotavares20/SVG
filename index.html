@@ -64,6 +64,33 @@
         fill="black"
       />
     </svg>
+
+    <h2>Path</h2>
+
+    <!-- Propriedades do path -->
+
+    <!-- M = MoveTo, L = LineTo, A = ArcTo -->
+
+    <!-- M = é o ponto de partida -->
+    <!-- L = é uma linha com parametros de x e y -->
+    <!-- A = é um arco, que nele tem varios parametros -->
+    <!-- Parametros do Arc = raioX, raioY, 0, curva convava ou convexa, x, y, parametro opcional: z no final do x, y fecha o path -->
+    <!-- 
+        Parametros que definem se a curva do arc é convexa ou concava sao representados por 0 ou 1 
+        0,0 a curva é concava por padrao, 0,1 a curva é convexa ou seja pra fora, e 1,0 a curva é concava ou seja pra dentro
+    -->
+    <!-- Convexa é quando a curva é pra fora -->
+    <!-- Convava é quando a curva é pra dentro -->
+    
+
+    <svg style="border: 1px solid red">
+      <path
+        d="M60,20 L40,80 A20,20 0 0,0 80,80z"
+        fill="transparent"
+        stroke-width="5"
+        stroke="blue"
+      />
+    </svg>
   </body>
 </html>
 
