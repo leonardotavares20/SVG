@@ -16,6 +16,8 @@
       <circle cx="150" cy="150" r="100" style="fill: red" />
     </svg>
 
+    <!-- A propriedade viewBox é usada definir a area de visualizacao do conteudo do SVG  -->
+
     <h2>Formas Básicas</h2>
 
     <h3>Rect</h3>
@@ -81,7 +83,6 @@
     -->
     <!-- Convexa é quando a curva é pra fora -->
     <!-- Convava é quando a curva é pra dentro -->
-    
 
     <svg style="border: 1px solid red">
       <path
@@ -90,6 +91,38 @@
         stroke-width="5"
         stroke="blue"
       />
+    </svg>
+
+    <h2>Containers</h2>
+
+    <h3>Defs</h3>
+
+    <svg>
+      <defs>
+        <circle id="circle" cx="140" cy="50" r="25" />
+      </defs>
+
+      <use href="#circle" />
+      <use href="#circle" x="100" fill="red" />
+    </svg>
+
+    <h3>Group</h3>
+
+    <svg style="border: 1px solid red">
+      <g fill="red">
+        <circle cx="100" cy="50" r="20" />
+        <circle cx="200" cy="50" r="20" />
+      </g>
+    </svg>
+
+    <h3>Symbol</h3>
+
+    <svg style="border: 1px solid red">
+      <symbol style="background-color: chartreuse;" id="symbol" viewBox="0 0 300 100">
+        <circle cx="150" cy="50" r="25" />
+      </symbol>
+
+      <use href="#symbol" />
     </svg>
   </body>
 </html>
