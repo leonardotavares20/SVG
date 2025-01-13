@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Loading Animation</title>
-  </head>
-  <style>
-    body {
-      text-align: center;
-      font-family: monospace;
-    }
-
-    .container {
-      width: 50%;
-      height: 50%;
-      margin: auto;
-    }
-  </style>
-  <body>
-    <h1>Loading Animation</h1>
-    <div class="container">
-      <!-- <svg width="100%" height="100%" viewBox="0 0 1198 1024">
-        <use xlink:href="symbols/octocat.svg#octocat" />
-      </svg> -->
-
-      <svg
+ <svg
         id="octocat"
         fill="currentColor"
         viewBox="0 0 1198 1024"
@@ -141,32 +115,3 @@
           </clipPath>
         </defs>
       </svg>
-    </div>
-  </body>
-</html>
-
-<script>
-  const eyes = document.querySelectorAll(".elipse_eye");
-
-  function toggleEye() {
-    eyes.forEach((eye) => {
-      eye.classList.toggle("closed_eye");
-    });
-  }
-
-  function animateEye() {
-    toggleEye();
-
-    setTimeout(() => {
-      toggleEye();
-    }, 200);
-
-    setTimeout(() => {
-      animateEye();
-    }, 2500);
-  }
-
-  setTimeout(() => {
-    animateEye();
-  }, 2000);
-</script>
