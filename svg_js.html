@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <svg class="draw" width="500" height="500" viewBox="0 0 500 500"></svg>
+
+    <button id="draw_circle">Draw Circle</button>
+
+    <script>
+      let draw = document.querySelector(".draw");
+      let svgNs = "http://www.w3.org/2000/svg";
+
+      function createCircle() {
+        let randomX = Math.floor(Math.random() * 500);
+        let randomY = Math.floor(Math.random() * 500);
+
+        let circle = document.createElementNS(svgNs, "circle");
+
+        circle.setAttributeNS(null, "r", 5);
+        circle.setAttributeNS(null, "cy", randomY);
+        circle.setAttributeNS(null, "cx", randomX);
+        circle.setAttributeNS(null, "fill", "red");
+
+        draw.appendChild(circle);
+      }
+
+      const button = document.querySelector("#draw_circle");
+
+      button.addEventListener("click", createCircle);
+    </script>
+  </body>
+</html>

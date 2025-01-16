@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <svg
+      width="527"
+      style="border: 1px solid red"
+      height="496"
+      viewBox="0 0 527 496"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1 201.643C132.777 592.786 197.839 592.786 329.616 201.643C408.01 -70.5247 450.943 -61.1967 526 201.643"
+        stroke="black"
+      />
+
+      <circle id="circle" r="10" fill="red">
+        <animateMotion
+          xlink:href="#circle"
+          dur="5"
+          path="M1 201.643C132.777 592.786 197.839 592.786 329.616 201.643C408.01 -70.5247 450.943 -61.1967 526 201.643"
+          fill="freeze"
+          keyPoints="0;1"
+          keyTimes="0;1"
+        />
+      </circle>
+    </svg>
+
+    <!-- <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill="none"
+        stroke="lightgrey"
+        d="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z"
+      />
+
+      <circle r="5" fill="red">
+        <animateMotion
+          dur="10s"
+          repeatCount="indefinite"
+          path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z"
+        />
+      </circle>
+    </svg> -->
+  </body>
+</html>

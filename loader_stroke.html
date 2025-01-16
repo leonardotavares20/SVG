@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      background-color: rgb(13, 17, 27);
+      display: flex;
+      align-items: center;
+      height: 100vh;
+      font-family: "Work Sans", serif;
+      justify-content: center;
+    }
+
+    .triangle {
+      stroke-dasharray: 17;
+      animation: dash 2.5s infinite ease-in-out;
+    }
+
+    .circle {
+      /* stroke-dasharray: 110; */
+      stroke-dasharray: 59;
+      stroke: rgb(255, 86, 86);
+      transform-origin: center center;
+      /* animation: rotate 1.2s infinite ease-in-out; */
+      /* animation: rotate 1s infinite cubic-bezier(0.2, 0.2, 0, 1); */
+      /* animation: rotate 1s infinite linear; */
+      animation: rotate 1s infinite;
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 136;
+      }
+    }
+
+    @keyframes rotate {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes text {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .loading {
+      font-size: 0.5rem;
+      animation: text 1s infinite ease-in-out;
+    }
+  </style>
+  <body>
+    <svg width="200" height="200" viewBox="0 0 40 60">
+      <polygon
+        class="triangle"
+        points="16,1 32,32 1,32"
+        fill="none"
+        stroke="white"
+        stroke-width="1"
+      />
+      <text class="loading" x="0" y="45" fill="white">Loading...</text>
+    </svg>
+
+    <svg width="200" height="200" viewBox="0 0 200 200">
+      <circle
+        class="circle"
+        stroke="gray"
+        fill="none"
+        stroke-width="6"
+        cx="100"
+        cy="100"
+        r="38"
+      />
+    </svg>
+  </body>
+</html>
