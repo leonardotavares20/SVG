@@ -10,6 +10,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: black;
       color: #39d339;
       height: 100vh;
     }
@@ -20,14 +21,112 @@
       animation: draw 5s linear forwards;
     }
 
+    #teste {
+      /* transform-origin: 20% 50%;
+      transform: scale(0);
+      animation: teste 0.2s linear forwards;
+      animation-delay: 0.7s; */
+    }
+
+    #teste2 {
+      /* transform-origin: 40% 50%;
+      transform: scale(0);
+      animation: teste 0.2s linear forwards;
+      animation-delay: 0.8s; */
+    }
+
+    #teste3 {
+      /* transform-origin: 60% 50%;
+      transform: scale(0);
+      animation: teste 0.2s linear forwards;
+      animation-delay: 0.9s; */
+    }
+
+    #teste4 {
+      /* transform-origin: 80% 50%;
+      transform: scale(0);
+      animation: teste 0.2s linear forwards;
+      animation-delay: 1s; */
+    }
+
+    #teste5 {
+      /* transform-origin: 20% 80%;
+      transform: scale(0);
+      animation: teste 0.2s linear forwards;
+      animation-delay: 0.7s; */
+    }
+
+    #teste6 {
+      /* transform-origin: 40% 80%;
+      transform: scale(0);
+      animation: teste 0.2s linear forwards;
+      animation-delay: 0.8s; */
+    }
+
+    #teste7 {
+      /* transform-origin: 60% 80%;
+      transform: scale(0);
+      animation: teste 0.2s linear forwards;
+      animation-delay: 0.9s; */
+    }
+
+    #teste8 {
+      /* transform-origin: 80% 80%;
+      transform: scale(0);
+      animation: teste 0.2s linear forwards;
+      animation-delay: 1s; */
+    }
+
+    #teste_ani {
+      /* transform-origin: bottom left;
+      transform: scale(0);
+      animation: teste 0.5s forwards;
+      animation-delay: 0.2; */
+    }
+
+    @keyframes loading {
+      to {
+        transform: translateY(-3px);
+      }
+    }
+
+    @keyframes teste {
+      to {
+        transform: scale(1);
+      }
+    }
+
     @keyframes draw {
       to {
         stroke-dashoffset: 0;
       }
     }
+
+    /* #meuPath {
+      animation: animarPath 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes animarPath {
+      0% {
+        d: path("M10 80 Q 95 10 180 80");
+      }
+      100% {
+        d: path("M10 80 Q 95 50 180 20");
+      }
+    } */
   </style>
   <body>
-    <svg
+    <!-- <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+      <path
+        id="meuPath"
+        d="M10 80 Q 95 10 180 80"
+        fill="none"
+        stroke="black"
+        stroke-width="2"
+      />
+    </svg> -->
+
+    <!-- <svg
       id="path_js"
       width="700px"
       height="800px"
@@ -41,6 +140,130 @@
         id="path"
         d="M12 23.9555C11.6584 23.9555 11.3395 23.8674 11.0435 23.7134L8.01449 21.9748C7.55901 21.7327 7.78675 21.6447 7.9234 21.6006C8.5383 21.4026 8.65217 21.3586 9.28986 21.0064C9.35818 20.9624 9.44928 20.9844 9.5176 21.0284L11.8406 22.3709C11.9317 22.4149 12.0455 22.4149 12.1139 22.3709L21.2008 17.2871C21.2919 17.2431 21.3375 17.1551 21.3375 17.045V6.89944C21.3375 6.7894 21.2919 6.70137 21.2008 6.65735L12.1139 1.59556C12.0228 1.55155 11.9089 1.55155 11.8406 1.59556L2.75362 6.65735C2.66253 6.70137 2.61698 6.81141 2.61698 6.89944V17.045C2.61698 17.1331 2.66253 17.2431 2.75362 17.2871L5.23602 18.6736C6.57971 19.3338 7.42236 18.5636 7.42236 17.7933V7.77975C7.42236 7.6477 7.53623 7.51566 7.69565 7.51566H8.85714C8.99379 7.51566 9.13043 7.6257 9.13043 7.77975V17.7933C9.13043 19.5319 8.15114 20.5443 6.44306 20.5443C5.91925 20.5443 5.50932 20.5443 4.34783 19.9941L1.95652 18.6736C1.36439 18.3435 1 17.7273 1 17.067V6.92145C1 6.26121 1.36439 5.645 1.95652 5.31488L11.0435 0.231082C11.6128 -0.0770272 12.3872 -0.0770272 12.9565 0.231082L22.0435 5.31488C22.6356 5.645 23 6.26121 23 6.92145V17.067C23 17.7273 22.6356 18.3435 22.0435 18.6736L12.9565 23.7574C12.6605 23.8894 12.3188 23.9555 12 23.9555ZM14.8012 16.979C10.8157 16.979 9.99586 15.2184 9.99586 13.7219C9.99586 13.5898 10.1097 13.4578 10.2692 13.4578H11.4534C11.5901 13.4578 11.7039 13.5458 11.7039 13.6778C11.8861 14.8442 12.4099 15.4165 14.824 15.4165C16.7371 15.4165 17.5569 14.9983 17.5569 14.008C17.5569 13.4358 17.3292 13.0176 14.3458 12.7315C11.8634 12.4894 10.3147 11.9612 10.3147 10.0466C10.3147 8.26392 11.8634 7.20755 14.4596 7.20755C17.3747 7.20755 18.8095 8.17589 18.9917 10.2886C18.9917 10.3547 18.9689 10.4207 18.9234 10.4867C18.8778 10.5307 18.8095 10.5747 18.7412 10.5747H17.5569C17.4431 10.5747 17.3292 10.4867 17.3064 10.3767C17.0331 9.16624 16.3271 8.7701 14.4596 8.7701C12.3644 8.7701 12.1139 9.47435 12.1139 10.0025C12.1139 10.6408 12.4099 10.8388 15.234 11.191C18.0352 11.5431 19.3561 12.0493 19.3561 13.9419C19.3333 15.8786 17.6936 16.979 14.8012 16.979Z"
       />
+    </svg> -->
+
+    <svg
+      width="100"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 67.19 36.02"
+    >
+      <defs>
+        <style>
+          .cls-1 {
+            fill: #fff;
+          }
+        </style>
+      </defs>
+      <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+          <path
+            id="teste_ani"
+            class="cls-1"
+            d="M63.82,0H10.61A3.36,3.36,0,0,0,7.55,2V2a2.44,2.44,0,0,0-.1.24L.23,20.54a2,2,0,0,0-.23.92V34a2,2,0,0,0,2,2H33.89a1.81,1.81,0,0,0,.52-.07l30-8a2.84,2.84,0,0,0,.31-.06l.28-.09.37-.1-.07,0a3.36,3.36,0,0,0,1.91-3V3.37A3.37,3.37,0,0,0,63.82,0Z"
+          />
+
+          <path
+            id="teste"
+            d="M16.27,10.71l2.5,1.5,2.5-1.5v2.58h4.44v-10H21.76c-2,0-3,2.21-3,2.21s-1-2.21-3-2.21h-4v10h4.45Z"
+          />
+          <path
+            id="teste"
+            d="M32.34,10.29H34v3h5.56V5.57A2.07,2.07,0,0,0,38.3,3.73S37,3,33.15,3,28,3.73,28,3.73h0a2.05,2.05,0,0,0-1.22,1.84v7.72h5.56ZM32.08,6.7h0a1.07,1.07,0,0,1,2.14,0V8.94H32.08Z"
+          />
+          <path
+            id="teste"
+            d="M40.2,13.29h4.57a3.09,3.09,0,0,0,2.17-.92l.56-.65.56.65a3.13,3.13,0,0,0,2.17.92h4.59l-4.34-5,4.41-5.12H50.25a3.07,3.07,0,0,0-2.08.92l-.66.77-.67-.77a3.08,3.08,0,0,0-2.13-.92H40.12l4.41,5.12Z"
+          />
+          <rect id="teste" x="55.5" y="3.15" width="5.56" height="10.14" />
+          <path
+            id="teste2"
+            d="M21.3,17.25s-1-2.24-3-2.24h-4V25.1h4.49V22.5L21.3,24l2.52-1.51v2.6h4.49V15h-4C22.31,15,21.3,17.25,21.3,17.25Z"
+          />
+          <rect id="teste2" x="29.37" y="14.96" width="5.56" height="10.14" />
+          <!-- <path
+            class="cls-1"
+            d="M34.22,7.8V6.7a1.07,1.07,0,0,0-2.14,0h0V8.94h2.14Z"
+          /> -->
+          <polygon
+            id="teste2"
+            points="36.3 14.96 36.3 17.69 40.85 17.69 35.54 25.1 48.99 25.1 48.99 22.37 44.29 22.37 49.56 14.96 36.3 14.96"
+          />
+          <path
+            id="teste2"
+            d="M52,15a1.92,1.92,0,0,0-1.93,1.93s0,.09,0,.14a1.93,1.93,0,0,0,0,.24V25.1H61.73V22.4H55.12V21.07H59.2v-2H55.12V17.66h6.61V15Z"
+          />
+        </g>
+      </g>
     </svg>
+
+    <!-- <svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+      <path id="path1" d="M10 80 Q 95 10 180 80" fill="none" stroke="blue" />
+      <path id="path2" d="M50 50 L150 50 L150 100 Z" fill="none" stroke="red" />
+      <path
+        id="animatedPath"
+        d="M10 80 Q 95 10 180 80"
+        fill="none"
+        stroke="green"
+      />
+    </svg>
+
+    <script src="https://cdn.jsdelivr.net/npm/flubber"></script>
+    <script>
+      const path1 = document.getElementById("path1").getAttribute("d");
+      const path2 = document.getElementById("path2").getAttribute("d");
+      const animatedPath = document.getElementById("animatedPath");
+
+      const interpolator = flubber.interpolate(path1, path2);
+
+      let progress = 0;
+
+      function animate() {
+        progress += 0.01;
+        if (progress > 1) progress = 0;
+
+        animatedPath.setAttribute("d", interpolator(progress));
+
+        requestAnimationFrame(animate);
+      }
+
+      animate();
+    </script> -->
+
+    <!-- <svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+      <path id="animatedPath" d="M10 20" fill="red" />
+    </svg> -->
+    <!-- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+      const path1 = "M10 80 Q 95 10 180 80";
+      const path2 =
+        "M16.27,10.71l2.5,1.5,2.5-1.5v2.58h4.44v-10H21.76c-2,0-3,2.21-3,2.21s-1-2.21-3-2.21h-4v10h4.45Z";
+
+      gsap.to("#animatedPath", {
+        duration: 0.4,
+        attr: { d: path2 },
+        // repeat: -1,
+        // yoyo: true,
+      });
+    </script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+      gsap.to("#teste", {
+        keyframes: [{ y: 0 }, { y: -2 }, { y: 0 }],
+        repeat: -1,
+        duration: 0.5,
+        stagger: 0.1, // Delay entre cada letra
+        ease: "steps(4)",
+      });
+
+      gsap.to("#teste2", {
+        keyframes: [{ y: 0 }, { y: 2 }, { y: 0 }],
+        repeat: -1,
+        duration: 0.5,
+        stagger: 0.1, // Delay entre cada letra
+        ease: "steps(4)",
+      });
+    </script>
   </body>
 </html>
