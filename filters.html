@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      height: 100vh;
+      align-content: center;
+      place-items: center;
+      filter: url(#drunk);
+      -webkit-filter: url(#drunk);
+    }
+
+    .drunk {
+      font-size: 8vw;
+      letter-spacing: 10px;
+      border: 2vw solid white;
+      padding: 4vw;
+      animation: drunk 1s infinite alternate ease-in-out;
+    }
+
+    .svg-filter {
+      display: none;
+    }
+
+    @keyframes drunk {
+      0% {
+        /* transform: rotate(-25deg); */
+        /* transform: rotate(-25deg); */
+        transform: translateY(-150px);
+      }
+
+      100% {
+        transform: translateY(100px) ;
+        /* transform: rotate(25deg); */
+      }
+    }
+  </style>
+
+  <svg class="svg-filter">
+    <defs>
+      <filter id="drunk">
+        <feTurbulence baseFrequency="0.01" numOctaves="2" seed="1" />
+        <feDisplacementMap in="SourceGraphic" scale="30" />
+      </filter>
+    </defs>
+  </svg>
+
+  <body>
+    <h1 class="drunk">
+      Man <br />
+      I'm drunk
+    </h1>
+  </body>
+</html>
